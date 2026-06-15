@@ -1,0 +1,126 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        maroon: {
+          50: '#fdf2f4',
+          100: '#fce7eb',
+          200: '#f9d0d9',
+          300: '#f4a9ba',
+          400: '#ec7a97',
+          500: '#e04d75',
+          600: '#c43a5f',
+          700: '#a02e4d',
+          800: '#872a43',
+          900: '#73273d',
+          950: '#3f0f1e',
+        },
+        gold: {
+          50: '#fefbf3',
+          100: '#fdf7e6',
+          200: '#fae8c4',
+          300: '#f5d494',
+          400: '#f0bb5a',
+          500: '#d4a574',
+          600: '#c19a58',
+          700: '#a67e3f',
+          800: '#8b6930',
+          900: '#6f5424',
+          950: '#4a3515',
+        },
+        cream: {
+          50: '#FAFAF5',
+          100: '#F5F0E0',
+          200: '#EDD9B4',
+          300: '#E2C28A',
+          400: '#D6A85F',
+          500: '#C9913E',
+        },
+        charcoal: '#2C2C2C',
+        sanctuary: {
+          50: '#fdf2f4',
+          100: '#fce7eb',
+          200: '#f9d0d9',
+          300: '#f4a9ba',
+          400: '#ec7a97',
+          500: '#e04d75',
+          600: '#c43a5f',
+          700: '#a02e4d',
+          800: '#872a43',
+          900: '#73273d',
+          950: '#3f0f1e',
+        },
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Cormorant Garamond', 'Georgia', 'serif'],
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.8s ease forwards',
+        'fade-in': 'fadeIn 1s ease forwards',
+        'slide-left': 'slideLeft 0.8s ease forwards',
+        'slide-right': 'slideRight 0.8s ease forwards',
+        'scale-in': 'scaleIn 0.6s ease forwards',
+        'float': 'float 6s ease-in-out infinite',
+        'shimmer': 'shimmer 2.5s linear infinite',
+        'spin-slow': 'spin 12s linear infinite',
+        'pulse-slow': 'pulse 4s ease-in-out infinite',
+        'ken-burns': 'kenBurns 20s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideLeft: {
+          '0%': { opacity: '0', transform: 'translateX(60px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideRight: {
+          '0%': { opacity: '0', transform: 'translateX(-60px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% center' },
+          '100%': { backgroundPosition: '200% center' },
+        },
+        kenBurns: {
+          '0%': { transform: 'scale(1) translate(0, 0)' },
+          '100%': { transform: 'scale(1.15) translate(-2%, -2%)' },
+        },
+      },
+      backgroundImage: {
+        'gold-gradient': 'linear-gradient(135deg, #d4a574 0%, #f0bb5a 50%, #d4a574 100%)',
+        'sanctuary-gradient': 'linear-gradient(135deg, #3f0f1e 0%, #73273d 100%)',
+        'hero-gradient': 'linear-gradient(to bottom, rgba(63,15,30,0.4) 0%, rgba(115,39,61,0.8) 100%)',
+      },
+      boxShadow: {
+        'gold': '0 4px 30px rgba(212, 165, 116, 0.3)',
+        'gold-lg': '0 8px 50px rgba(240, 187, 90, 0.4)',
+        'sanctuary': '0 4px 30px rgba(45, 111, 75, 0.3)',
+        'sanctuary-lg': '0 8px 50px rgba(26, 58, 42, 0.4)',
+        'card': '0 10px 60px rgba(0,0,0,0.1)',
+        'card-hover': '0 20px 80px rgba(0,0,0,0.2)',
+      },
+      transitionTimingFunction: {
+        'luxury': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+      },
+    },
+  },
+  plugins: [],
+};
